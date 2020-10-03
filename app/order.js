@@ -1,10 +1,32 @@
 window.addEventListener("DOMContentLoaded", function(e){
-const order = localStorage.getItem("order");
+
+    let locationBox = document.querySelector("#location");
+    let location = {
+        latitude: "unknown",
+        longitude: "unknown"
+    };
+
+    window.navigator.geolocation.getCurrentPosition(
+        function(position){
+            location={
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude
+            };
+            locationBox.value = JSON.stringify(location);
+        },
+        function(error){
+            locationBox.value = JSON.stringify(location);
+        });
+
+    const order = localStorage.getItem("order");
 
 
 if(order){
     // get data from local storage
     const pieOrder = JSON.parse(order);
+
+    const orderInput = document.querySelector("#pie-order");
+    orderInput.value = order;
 
     // element in the current page
     const pie = document.querySelector(".pie");
