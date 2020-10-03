@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Bethany's Pie Shop</title>
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <link rel="stylesheet" href="order.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/app">Home</a></li>
+                <li><a href="/app/pies.html">Pies</a></li>
+                <li><a href="/app/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside><img src="/images/logo.png" alt="Bethany's Pie Shop"></aside>
+
+        <article>
+            <h1>Order</h1>
+
+            <div class="pie">
+                <img src="" />
+                <div class="columns">
+                    <div class="title"></div>
+                    <div class="price"></div>
+                </div>
+                <p class="desc"></p>
+            </div>
+
+           <form action="http://localhost:5500/api/post" method="POST">
+
+            <input type="hidden" id="pie-order" name="pie-order">
+            <input type="hidden" id="location" name="location">
+
+            <div class="input-group">
+                <div><label for="first-name">First name</label></div>
+                <div><input type="text" name="first-name" id="first-name"/></div>
+            </div>
+
+            <div class="input-group">
+                <div><label for="last-name">Last name</label></div>
+                <div><input type="text" name="last-name" id="last-name"/></div>
+            </div>
+
+            <div class="input-group">
+                <div><label for="address">Address</label></div>
+                <div><input type="text" name="address" id="address"/></div>
+            </div>
+
+            <div class="input-group">
+                <div><label for="state">State</label></div>
+                <div>
+                    <select name="state" id="state">
+                        <option value="" selected>Select one</option>>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Oyo">Oyo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div><label for="poster-code">Poster code</label></div>
+                <div><input type="text" name="poster-code" id="poster-code"/></div>
+            </div>
+
+            <div class="input-group">
+                <div><label for="comment">Comment</label></div>
+                <div>
+                    <textarea 
+                        name="comment" 
+                        id="comment" 
+                        cols="30" 
+                        rows="10">
+                    </textarea>
+                </div>
+            </div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Order">
+
+           </form>
+        </article>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+<script src="order.js"></script>
+</html>
