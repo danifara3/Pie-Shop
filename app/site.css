@@ -118,9 +118,10 @@ article{
 }
 
 .pie button {
-    background-color: #f6aeae;
+    background-color: #a493c0;
     padding: 10px;
     border: solid 1px #f6aeae;
     border-radius: 3px;
     color: #fff;
+    font-size: 100%;
 }
