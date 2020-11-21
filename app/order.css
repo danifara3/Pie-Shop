@@ -51,6 +51,19 @@ legend {
 font-weight: bold;
 }
 
+input:valid{
+    border-color: green;
+
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus:invalid{
+    border-color: black;
+}
+
 
 @media only screen and (min-width: 768px){
 article{
