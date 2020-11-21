@@ -1,41 +1,59 @@
- .input-group {
-     margin-bottom: 20px;
- }
+.input-group {
+    margin-bottom: 20px;
+}
 
- .input-group input,
- .input-group textarea,
- .input-group select {
-    padding: 10px;
-    border: solid 1px #999;
-    border-radius: 10px;
-    width: 100%;
- }
+.input-group input,
+.input-group textarea,
+.input-group select {
+padding: 10px;
+border: solid 1px #999;
+border-radius: 10px;
+width: 100%;
+}
 
- label {
-     font-weight: 600;
- }
+article{
+    padding-left: 10%;
+}
 
- input[type="reset"]{
-     background: transparent;
-     border: 0;
-     text-decoration: underline;
-     cursor: pointer;
-     padding-right: 30px;
-     padding-left: 20px;
-     font-size: 100%;
- }
 
- input[type="submit"]{
-    border: solid 1px  #f6aeae;
-    border-radius: 3px;
-    padding: 10px;
-    background: #a493c0;
-    color: #fff;
+
+label {
+    font-weight: 600;
+}
+
+input[type="reset"]{
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 30px;
+    padding-left: 20px;
     font-size: 100%;
 }
 
+input[type="submit"]{
+border: solid 1px  #f6aeae;
+border-radius: 3px;
+padding: 10px;
+background: #a493c0;
+color: #fff;
+font-size: 100%;
+}
+
+fieldset {
+    padding-right: 15%;
+    margin-bottom: 10%;
+    border-color: #f6aeae;
+    border-radius: 10px;
+}
+
+legend {
+font-weight: bold;
+}
+
+
 @media only screen and (min-width: 768px){
-    article{
-        width: 350px;
-    }
+article{
+    width: 350px;
+}
 }
